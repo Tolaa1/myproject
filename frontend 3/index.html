@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gifs Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </head>
+
+  <body>
+    <br />
+    <div class="text-center">
+      <header>
+        <h1>Gifs Gallery Project</h1>
+      </header>
+      <p>
+        This gallery contains all my gifs and other gifs uploaded by other users
+      </p>
+    </div>
+
+    <div class="container-fluid body-content" style="margin-top:1rem">
+
+      <main class="login-form">
+
+          <div class="cotainer">
+              <div class="row justify-content-center">
+                  <div class="col-md-6">
+                      <div class="card">
+                          <div class="card-header">Login</div>
+                          <div class="card-body">
+                              <form name="login" method="POST">
+                                  <div class="form-group row">
+                                      <label for="=username" class="col-md-4 col-form-label text-md-right">Username</label>
+                                      <div class="col-md-6">
+                                          <input type="text" id="username" class="form-control" name="username">
+                                      </div>
+                                  </div>
+       
+                                  <div class="form-group row">
+                                      <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                      <div class="col-md-6">
+                                          <input type="password" id="password" class="form-control" name="password">
+                                      </div>
+                                  </div>
+
+                                  <div class="col-md-6 offset-md-4">
+                                      <button id="btnLogin" class="btn btn-success  btn-lg btn-block">
+                                          Login
+                                      </button>
+                                  </div>
+       
+                          </div>
+                          </form>
+
+                          <hr />
+                          <p class="text-center">If you don't have an account please register</p>
+                          <div class="col-md-6 offset-md-4">
+                              <button id="btnNavigateToRegister" class="btn btn-primary btn-lg btn-block">
+                                  Register
+                              </button>
+                          </div>
+                          <br>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+    
+      </main>
+
+    </div>
+
+    <!-- Footer of page -->
+    <footer class="footer">
+      <p class="text-center font-weight-bold">
+        <strong>By Tolase Saheed</strong>
+      </p>
+    </footer>
+
+
+  </body>
+</html>

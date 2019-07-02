@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gifs Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation top bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">All Gifs</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-danger my-2 my-sm-0" type="submit">
+            Logout
+          </button>
+        </form>
+      </div>
+    </nav>
+    <br />
+    <div class="col-md-12">
+      <button id="btnDeleteGif" class="btn btn-danger btn-lg">
+        Delete Gif
+      </button>
+
+      <button id="btnEditGif" class="btn btn-primary btn-lg">
+        Edit Gif
+      </button>
+    </div>
+
+    <hr />
+
+    <div class="container-fluid">
+      <div class="card" style="width: 18rem; margin-top: 10px; margin: 0 auto;">
+        <h1 class="text-center">Gif Title</h1>
+        <!-- <img class="card-img-top" src="./img_chania.jpg" alt="Card image cap" /> -->
+        <img
+          id="imgMyImage"
+          class="card-img-top"
+          src="https://media.tenor.com/images/629b035bff4e0b7a9b7ea98c32f4f915/tenor.gif"
+        />
+        <h5 id="imageName" class="text-center"></h5>
+        <div class="card-body">
+          <i id="btnLike" class="fas fa-thumbs-up"></i>
+          <p id="likeCount" class="card-text">Likes</p>
+
+          <p id="description">Description</p>
+        </div>
+      </div>
+
+      <!-- comments section -->
+      <div class="detailBox">
+        <div class="titleBox">
+          <label>Comment Box</label>
+        </div>
+
+        <div class="actionBox">
+          <ul id="allComments" class="commentList"></ul>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <input
+                id="newCommentBox"
+                class="form-control"
+                type="text"
+                placeholder="Your comments"
+              />
+            </div>
+            <div class="form-group">
+              <button type="submit" id="btnAddComment" class="btn btn-default">
+                Add
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Footer of page -->
+    <!-- <footer class="footer">
+      <p class="text-center font-weight-bold">
+        <strong>By Tolase Saheed</strong>
+      </p>
+    </footer> -->
+  </body>
+</html>
